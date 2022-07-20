@@ -1,0 +1,15 @@
+dbt_Project:
+  outputs:
+
+    dev:
+      type: postgres
+      threads: 4
+      host: "REPLACE WITH ENDPOINT IN THE USER INFO FILE"
+      port: 5432
+      user: postgres
+      pass: "REPLACE WITH MASTER USER PASSWORD"
+      dbname: Calls
+      schema: callsData
+
+
+  target: dev
